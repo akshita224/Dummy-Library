@@ -21,6 +21,7 @@ class CopiesController < ApplicationController
 
   # POST /copies or /copies.json
   def create
+    
     @copy = Copy.new(copy_params)
 
     respond_to do |format|
