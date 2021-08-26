@@ -1,0 +1,25 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  book_name: MyString
+  string: MyString
+  edition: 9.99
+  qr_code: MyString
+  publisher: MyString
+  publishing_year: 1
+  issuable: false
+  donated: false
+  cost: 1
+  book: one
+
+two:
+  book_name: MyString
+  string: MyString
+  edition: 9.99
+  qr_code: MyString
+  publisher: MyString
+  publishing_year: 1
+  issuable: false
+  donated: false
+  cost: 1
+  book: two

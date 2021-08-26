@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Book name:</strong>
+  <%= @copy.book_name %>
+</p>
+
+
+
+<p>
+  <strong>Edition:</strong>
+  <%= @copy.edition %>
+</p>
+
+<p>
+  <strong>Qr code:</strong>
+  <%= @copy.qr_code %>
+</p>
+
+<p>
+  <strong>Publisher:</strong>
+  <%= @copy.publisher %>
+</p>
+
+<p>
+  <strong>Publishing year:</strong>
+  <%= @copy.publishing_year %>
+</p>
+
+<p>
+  <strong>Issuable:</strong>
+  <%= @copy.issuable %>
+</p>
+
+<p>
+  <strong>Donated:</strong>
+  <%= @copy.donated %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @copy.cost %>
+</p>
+
+<p>
+  <strong>Book:</strong>
+  <%= @copy.book_name %>
+</p>
+
+<%= link_to 'Edit', edit_copy_path(@copy) %> <br>
+<%= link_to 'Back', copies_path %>

@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Copies</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>Book name</th>
+      
+      <th>Edition</th>
+      <th>Qr code</th>
+      <th>Publisher</th>
+      <th>Publishing year</th>
+      <th>Issuable</th>
+      <th>Donated</th>
+      <th>Cost</th>
+      <th>Book</th>
+      <th colspan="5"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @copies.each do |copy| %>
+      <tr>
+        <td><%= copy.book_name %></td>
+        
+        <td><%= copy.edition %></td>
+        <td><%= copy.qr_code %></td>
+        <td><%= copy.publisher %></td>
+        <td><%= copy.publishing_year %></td>
+        <td><%= copy.issuable %></td>
+        <td><%= copy.donated %></td>
+        <td><%= copy.cost %></td>
+        <td><%= copy.book_name %></td>
+        <td><%= link_to 'Show', copy %></td>
+        <td><%= link_to 'Edit', edit_copy_path(copy) %></td>
+        <td><%= link_to 'Destroy', copy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Copy', new_copy_path %>
